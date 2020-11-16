@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset=UTF-8>
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title><%= pageTitle %></title>
+
+  <%= require('html-loader!./vendor.html') %>
+
+  <script src="<%- basename %>bundle.js"></script>
+  <link rel="stylesheet" href="<%- basename %>style.css">
+</head>
+
+<body>
+  <div class="inner">
+    <%= require('html-loader!./header.html') %>
+
+    <main id="content" class="main--staticpage u-margin-top--xlg">
+      <div class="o-container">
+        <%= require('html-loader!./' + partial) %>
+    </main>
+  </div>
+  </div>
+</body>

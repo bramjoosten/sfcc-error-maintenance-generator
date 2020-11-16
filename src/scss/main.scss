@@ -1,0 +1,31 @@
+html {
+    font-family: "Open Sans Normal";
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    padding: 0;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    max-width: 500px;
+    background: url("../assets/chuttersnap-Odc4dcsjUBw-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.inner{
+    background: rgba(#fff,0.5);
+    padding: 20px;
+}
+
+.logo {
+    width: 200px;
+}
+
+@font-face {
+    font-family: "Open Sans Normal";
+    src: url("../assets/OpenSans-Normal.woff2") format("woff2");
+}
